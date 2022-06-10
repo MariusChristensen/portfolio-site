@@ -40,6 +40,7 @@ iframe {
   width: 1000px;
   height: 700px;
   border: 0;
+  pointer-events: none;
 
   -ms-transform: scale(0.25);
   -moz-transform: scale(0.25);
