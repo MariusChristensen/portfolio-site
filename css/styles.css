@@ -23,17 +23,22 @@ footer {
   background-color: aqua;
 }
 
+h1,
+h2 {
+  text-align: center;
+}
+
 .iframe-stuff {
-  width: 320px;
-  height: 192px;
+  width: 250px;
+  height: 150px;
   padding: 0;
   overflow: hidden;
-  margin: 0px auto;
+  margin: 10px auto;
 }
 
 iframe {
-  width: 1280px;
-  height: 786px;
+  width: 1000px;
+  height: 700px;
   border: 0;
 
   -ms-transform: scale(0.25);
@@ -63,7 +68,10 @@ iframe {
 .card-1,
 .card-2,
 .card-3 {
-  border: 3px solid black;
+  border: 3px solid aqua;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
 }
 
 .card-1 {
@@ -140,4 +148,16 @@ iframe {
 
 .desc-3 {
   grid-area: desc-3;
+}
+
+@media (max-width: 720px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 0px;
+    grid-template-areas:
+      "card-1"
+      "card-2"
+      "card-3";
+  }
 }
