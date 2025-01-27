@@ -240,6 +240,72 @@ section {
 }
 
 /* ==================
+   About & Skills Section
+================== */
+#about {
+  position: relative;
+  overflow: hidden;
+}
+
+#about::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(var(--shadow) 1px, transparent 1px);
+  background-size: 50px 50px;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.skills {
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.skills h3 {
+  font-family: Lobster;
+  color: var(--primary);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.skill-tags {
+  display: flex;
+  gap: 0.6rem 0.8rem; /* Slightly bigger gaps for larger tags */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill-tag {
+  font-size: 1rem; /* Bigger than tech tags (0.7rem) */
+  padding: 4px 12px; /* More padding for better visibility */
+  background: linear-gradient(
+    to right,
+    var(--gradient-start),
+    var(--gradient-end)
+  );
+  color: var(--text-light);
+  border: none;
+  border-radius: 12px;
+  opacity: 0.9;
+}
+
+.maintenance-note {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid var(--shadow);
+}
+
+.maintenance-note p {
+  font-size: 0.9rem;
+  color: var(--secondary);
+  margin: 0;
+}
+
+/* ==================
    Project Cards
 ================== */
 .card-1,
@@ -296,16 +362,12 @@ section {
 }
 
 /* Card Title Styles */
-.site-1 h2,
-.site-2 h2,
-.site-3 h2 {
+[class^="site-"] h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.site-1 h2::after,
-.site-2 h2::after,
-.site-3 h2::after {
+[class^="site-"] h2::after {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -431,7 +493,7 @@ section {
 }
 
 .social-links a:hover {
-  color: #ffcc00;
+  color: var(--hover);
 }
 
 /* ==================
@@ -472,7 +534,7 @@ footer p {
   transition: all 0.3s ease;
   transform: translateY(100px);
   font-size: 1.2rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px var(--shadow);
 }
 
 #scroll-top.visible {
@@ -562,70 +624,4 @@ footer p {
   .card-3 {
     break-inside: avoid;
   }
-}
-
-/* ==================
-   About & Skills Section
-================== */
-#about {
-  position: relative;
-  overflow: hidden;
-}
-
-#about::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: radial-gradient(var(--shadow) 1px, transparent 1px);
-  background-size: 50px 50px;
-  opacity: 0.3;
-  z-index: -1;
-}
-
-.skills {
-  max-width: 800px;
-  margin: 2rem auto;
-  text-align: center;
-}
-
-.skills h3 {
-  font-family: Lobster;
-  color: var(--primary);
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
-
-.skill-tags {
-  display: flex;
-  gap: 0.6rem 0.8rem; /* Slightly bigger gaps for larger tags */
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.skill-tag {
-  font-size: 1rem; /* Bigger than tech tags (0.7rem) */
-  padding: 4px 12px; /* More padding for better visibility */
-  background: linear-gradient(
-    to right,
-    var(--gradient-start),
-    var(--gradient-end)
-  );
-  color: var(--text-light);
-  border: none;
-  border-radius: 12px;
-  opacity: 0.9;
-}
-
-.maintenance-note {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 1rem;
-  text-align: center;
-  border-top: 1px solid var(--shadow);
-}
-
-.maintenance-note p {
-  font-size: 0.9rem;
-  color: var(--secondary);
-  margin: 0;
 }
