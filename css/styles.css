@@ -335,7 +335,7 @@ section {
 .desc-1 a:hover,
 .desc-2 a:hover,
 .desc-3 a:hover {
-  background-color: rgba(51, 65, 85, 0.1); /* Using primary color */
+  opacity: 0.8;
   border-bottom: 2px solid var(--primary);
 }
 
