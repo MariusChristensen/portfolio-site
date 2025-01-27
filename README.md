@@ -1,25 +1,45 @@
 # Portfolio Website
 
-![image](https://i.gyazo.com/6c0025393da482e26b00e199512656e1.jpg)
+![Portfolio Screenshot](https://your-new-screenshot-url.jpg)
 
-Super simple little portfolio website where i showcase what I have made so far on my journey to become a frond-end developer
+A modern, responsive portfolio website showcasing my journey and projects as an aspiring front-end developer.
 
 ## Description
 
-Not really much to say, just a very basic(but still good looking) website to show off my own old and ongoing projects as a student at Noroff. 
+This portfolio site features my current projects at KodeHode and previous work from Noroff, demonstrating my growth and skills in web development. The site includes:
+
+- About section with professional background
+- Skills overview
+- Project showcase with live demos
+- Contact information
 
 ## Built With
 
 - HTML
 - CSS
+  - CSS Variables
+  - CSS Grid
+  - CSS Animations
+- JavaScript
+  - Smooth Scrolling
+  - Interactive Elements
 
+## Features
 
-## Contributing
-
-As this is a school project i'm not looking for any contributions, but maybe in the future!
+- Responsive design
+- Modern color scheme
+- Animated elements
+- Project cards with live previews
+- Easy navigation
+- Mobile-friendly layout
 
 ## Contact
 
-If you want, feel free to contact me on my twitter!
+Feel free to reach out:
 
-[My Twitter page](https://twitter.com/MariusC88)
+[My GitHub Profile](https://github.com/MariusChristensen)
+
+## Acknowledgments
+
+- KodeHode for current learning journey
+- Noroff for initial web development experience
