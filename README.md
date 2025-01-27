@@ -1,7 +1,5 @@
 # Portfolio Website
 
-![Portfolio Screenshot](https://your-new-screenshot-url.jpg)
-
 A modern, responsive portfolio website showcasing my journey and projects as an aspiring front-end developer.
 
 ## Description
