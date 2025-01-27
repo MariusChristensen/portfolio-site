@@ -100,13 +100,23 @@ nav {
   padding: 1rem;
   max-width: 1200px;
   margin: 0 auto;
-  display: block;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  font-family: Lobster;
+  font-size: 1.4rem;
+  color: var(--text-light);
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  justify-content: center;
   gap: 2rem;
   margin: 0;
   padding: 0;
