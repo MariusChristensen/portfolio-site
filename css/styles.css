@@ -278,19 +278,10 @@ section {
   max-width: 100%;
   height: auto;
   object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
-/* Card Hover Effects */
-.card-1:hover,
-.card-2:hover,
-.card-3:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px var(--shadow);
-}
-
-.card-1:hover img,
-.card-2:hover img,
-.card-3:hover img {
+.img-stuff img:hover {
   transform: scale(1.05);
 }
 
@@ -596,18 +587,23 @@ footer p {
 
 .skill-tags {
   display: flex;
-  gap: 1rem;
+  gap: 0.6rem 0.8rem; /* Slightly bigger gaps for larger tags */
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .skill-tag {
-  padding: 0.5rem 1rem;
-  background: var(--card-bg);
-  border: 1px solid var(--primary);
-  border-radius: 20px;
-  color: var(--primary);
-  font-size: 1rem;
+  font-size: 1rem; /* Bigger than tech tags (0.7rem) */
+  padding: 4px 12px; /* More padding for better visibility */
+  background: linear-gradient(
+    to right,
+    var(--gradient-start),
+    var(--gradient-end)
+  );
+  color: var(--text-light);
+  border: none;
+  border-radius: 12px;
+  opacity: 0.9;
 }
 
 .maintenance-note {
