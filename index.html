@@ -6,22 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="My portfolio page, here you can see all my old and ongoing projects!"
+      content="Portfolio of Marius Christensen - Front-End Developer"
     />
-    <title>Portfolio Page</title>
+    <title>Marius Christensen | Portfolio</title>
     <link
       rel="shortcut icon"
       href="/images/favicon-16x16.png"
       type="image/x-icon"
     />
     <link rel="stylesheet" href="/css/styles.css" />
+    <meta property="og:title" content="Marius Christensen | Portfolio" />
+    <meta
+      property="og:description"
+      content="Portfolio of Marius Christensen - Front-End Developer"
+    />
+    <meta property="og:image" content="[your-site-url]/images/profile.jpg" />
+    <meta property="og:url" content="[your-site-url]" />
   </head>
-  <body>
+  <body id="top">
     <!--Hei dette er et gammelt prosjekt der jeg bare skriver en liten kommentar, hei og hopp hvor det går-->
     <header>
       <nav>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
+          <li><a href="#top">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -29,17 +36,31 @@
     </header>
     <main>
       <section id="about">
-        <div>
-          <h1>Welcome to my portfolio</h1>
+        <h1>Welcome to my portfolio</h1>
+
+        <div class="profile-container">
+          <div class="selfie">
+            <img
+              src="/images/profile.jpg"
+              alt="Marius Christensen - Front-End Developer"
+            />
+          </div>
+
+          <div class="profile-info">
+            <h2>Marius Christensen</h2>
+            <p class="title">Aspiring Front-End Developer</p>
+            <div class="details">
+              <p>Porsgrunn, Norway</p>
+              <p>36 years old</p>
+            </div>
+          </div>
         </div>
-        <div class="selfie img-stuff">
-          <img src="/images/profile.jpg" alt="picture of me" />
-        </div>
+
         <div class="intro">
           <p>
-            Hi! I'm Marius Christensen, and I'm currently learning Front-End
-            development at KodeHode, where I'm building exciting new projects
-            and expanding my skills every day.
+            Hi! I'm currently learning Front-End development at KodeHode, where
+            I'm building exciting new projects and expanding my skills every
+            day.
           </p>
           <p>
             I previously studied some Front-End development at Noroff, and while
@@ -51,13 +72,143 @@
             earlier work from Noroff.
           </p>
         </div>
+
+        <div class="skills">
+          <h3>Core Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Responsive Design</span>
+            <span class="skill-tag">Git</span>
+          </div>
+        </div>
       </section>
 
       <section id="projects">
         <h2 class="section-title">Current Projects at KodeHode</h2>
         <div class="container">
-          <div class="card-placeholder">
-            <p class="coming-soon">New projects coming soon!</p>
+          <article class="card-1">
+            <div class="site-1">
+              <h2>SnakeySnake</h2>
+            </div>
+            <div class="img-stuff img-1">
+              <a
+                href="https://mariuschristensen.github.io/cursor-guided-game/"
+                target="_blank"
+              >
+                <img
+                  src="/images/snake-game.jpg"
+                  alt="Screenshot of SnakeySnake game"
+                />
+              </a>
+            </div>
+            <div class="desc-1">
+              <p>
+                A modern take on the classic Snake game built with vanilla
+                JavaScript. Features include score tracking, real-time updates,
+                and special golden apples for bonus points. (Note: Leaderboard
+                feature currently under maintenance)
+              </p>
+              <p>
+                View project on
+                <a
+                  href="https://github.com/MariusChristensen/cursor-guided-game"
+                  >GitHub</a
+                >
+                or
+                <a
+                  href="https://mariuschristensen.github.io/cursor-guided-game/"
+                  >play the game</a
+                >.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">CSS</span>
+              </div>
+            </div>
+          </article>
+
+          <div class="card-2">
+            <div class="site-2">
+              <h2>Quiz Time</h2>
+            </div>
+            <div class="img-stuff img-2">
+              <a
+                href="https://mariuschristensen.github.io/quiz-time/"
+                target="_blank"
+              >
+                <img
+                  src="/images/quiz-app.jpg"
+                  alt="Screenshot of Quiz Time application"
+                />
+              </a>
+            </div>
+            <div class="desc-2">
+              <p>
+                An ocean-themed quiz application that pulls questions from the
+                Open Trivia Database. Features a "Who Wants to Be a Millionaire"
+                style interface, 24+ quiz categories, and drag-and-drop category
+                reordering with persistent storage.
+              </p>
+              <p>
+                View project on
+                <a href="https://github.com/MariusChristensen/quiz-time"
+                  >GitHub</a
+                >
+                or
+                <a href="https://mariuschristensen.github.io/quiz-time/"
+                  >play the quiz</a
+                >.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-3">
+            <div class="site-3">
+              <h2>Craftsvilla</h2>
+            </div>
+            <div class="img-stuff img-3">
+              <a
+                href="https://mariuschristensen.github.io/craftsvilla/"
+                target="_blank"
+              >
+                <img
+                  src="/images/craftsvilla.jpg"
+                  alt="Screenshot of Craftsvilla website"
+                />
+              </a>
+            </div>
+            <div class="desc-3">
+              <p>
+                A creative business website for CRAFTSVILLA, showcasing various
+                art workshops and activities. The site features multiple pages
+                including a gallery, booking system, and customer reviews. Built
+                with HTML, CSS, and JavaScript focusing on responsive design and
+                user experience.
+              </p>
+              <p>
+                View project on
+                <a href="https://github.com/MariusChristensen/craftsvilla"
+                  >GitHub</a
+                >
+                or
+                <a href="https://mariuschristensen.github.io/craftsvilla/"
+                  >visit the site</a
+                >.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -85,15 +236,21 @@
                 API.
               </p>
               <p>
-                You can click
+                View project on
                 <a
                   href="https://github.com/Noroff-FEU-Assignments/project-exam-1-MariusChristensen"
-                  >here</a
+                  >GitHub</a
                 >
-                to check out my github from the project or
-                <a href="https://mariusc-project-exam1.netlify.app/">here</a> to
-                go to the live site.
+                or
+                <a href="https://mariusc-project-exam1.netlify.app/"
+                  >visit the site</a
+                >.
               </p>
+              <div class="tech-tags">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+              </div>
             </div>
           </div>
           <div class="card-2">
@@ -117,15 +274,20 @@
                 school. This is made with just HTML&CSS
               </p>
               <p>
-                You can click
+                View project on
                 <a
                   href="https://github.com/MariusChristensen/semester-project-1"
-                  >here</a
+                  >GitHub</a
                 >
-                to check out my github from the project or
-                <a href="https://semester-project-msc.netlify.app/">here</a> to
-                go to the live site.
+                or
+                <a href="https://semester-project-msc.netlify.app/"
+                  >visit the site</a
+                >.
               </p>
+              <div class="tech-tags">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+              </div>
             </div>
           </div>
           <div class="card-3">
@@ -150,15 +312,20 @@
                 website.
               </p>
               <p>
-                You can click
+                View project on
                 <a
                   href="https://github.com/Noroff-FEU-Assignments/cross-course-project-MariusChristensen"
-                  >here</a
+                  >GitHub</a
                 >
-                to check out my github from the project or
-                <a href="https://rainydays-msc.netlify.app/">here</a> to go to
-                the live site.
+                or
+                <a href="https://rainydays-msc.netlify.app/">visit the site</a>.
               </p>
+              <div class="tech-tags">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">API Calls</span>
+              </div>
             </div>
           </div>
         </div>
@@ -180,6 +347,7 @@
     <footer>
       <p>&copy; 2024 Marius Christensen. All rights reserved.</p>
     </footer>
+    <button id="scroll-top" aria-label="Scroll to top">↑</button>
     <script src="/js/script.js"></script>
   </body>
 </html>
