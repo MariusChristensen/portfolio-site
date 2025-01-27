@@ -4,96 +4,182 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="My portfolio page, here you can see all my old and ongoing projects!" />
+    <meta
+      name="description"
+      content="My portfolio page, here you can see all my old and ongoing projects!"
+    />
     <title>Portfolio Page</title>
-    <link rel="shortcut icon" href="/images/favicon-16x16.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="/images/favicon-16x16.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
     <!--Hei dette er et gammelt prosjekt der jeg bare skriver en liten kommentar, hei og hopp hvor det går-->
-    <header></header>
+    <header>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
-      <div>
-        <h1>Welcome to my portfolio</h1>
-      </div>
-      <div class="selfie img-stuff">
-        <img src="/images/profile.jpg" alt="picture of me" />
-      </div>
-      <div class="intro">
-        <p>
-          My name is Marius Christensen and i'm currently studying front-end development at the Noroff School of
-          Technology and Digital Media
-        </p>
-        <p>I'm still in the early stages of learning, but enjoying the journey so far!</p>
-        <p>Below you will find links to all of my old and ongoing projects</p>
-      </div>
-      <div class="container">
-        <div class="card-1">
-          <div class="site-1">
-            <h2>The Missing Link</h2>
-          </div>
-          <div class="img-stuff img-1">
-            <a href="https://mariusc-project-exam1.netlify.app/" target=”_blank”><img src="/images/missing-link.jpg" alt="Screenshot of my website called The Missing Link" /></a>
-          </div>
-          <div class="desc-1">
-            <p>
-              This website is from a Project Exam at Noroff. We were meant to make a blog-site about any topic we
-              wanted. We needed to make the site from the ground up with basic HTML, CSS and JS, but fetching all the
-              blog-posts and media from the Wordpress REST API.
-            </p>
-            <p>
-              You can click
-              <a href="https://github.com/Noroff-FEU-Assignments/project-exam-1-MariusChristensen">here</a> to check out
-              my github from the project or <a href="https://mariusc-project-exam1.netlify.app/">here</a> to go to the
-              live site.
-            </p>
+      <section id="about">
+        <div>
+          <h1>Welcome to my portfolio</h1>
+        </div>
+        <div class="selfie img-stuff">
+          <img src="/images/profile.jpg" alt="picture of me" />
+        </div>
+        <div class="intro">
+          <p>
+            Hi! I'm Marius Christensen, and I'm currently learning Front-End
+            development at KodeHode, where I'm building exciting new projects
+            and expanding my skills every day.
+          </p>
+          <p>
+            I previously studied some Front-End development at Noroff, and while
+            I didn't complete the degree, it gave me valuable experience and
+            sparked my passion for web development.
+          </p>
+          <p>
+            Below you can find both my recent projects at KodeHode and my
+            earlier work from Noroff.
+          </p>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2 class="section-title">Current Projects at KodeHode</h2>
+        <div class="container">
+          <div class="card-placeholder">
+            <p class="coming-soon">New projects coming soon!</p>
           </div>
         </div>
-        <div class="card-2">
-          <div class="site-2">
-            <h2>Community Science Museum</h2>
+
+        <h2 class="section-title">Previous Projects from Noroff</h2>
+        <div class="container">
+          <div class="card-1">
+            <div class="site-1">
+              <h2>The Missing Link</h2>
+            </div>
+            <div class="img-stuff img-1">
+              <a
+                href="https://mariusc-project-exam1.netlify.app/"
+                target="”_blank”"
+                ><img
+                  src="/images/missing-link.jpg"
+                  alt="Screenshot of my website called The Missing Link"
+              /></a>
+            </div>
+            <div class="desc-1">
+              <p>
+                This website is from a Project Exam at Noroff. We were meant to
+                make a blog-site about any topic we wanted. We needed to make
+                the site from the ground up with basic HTML, CSS and JS, but
+                fetching all the blog-posts and media from the Wordpress REST
+                API.
+              </p>
+              <p>
+                You can click
+                <a
+                  href="https://github.com/Noroff-FEU-Assignments/project-exam-1-MariusChristensen"
+                  >here</a
+                >
+                to check out my github from the project or
+                <a href="https://mariusc-project-exam1.netlify.app/">here</a> to
+                go to the live site.
+              </p>
+            </div>
           </div>
-          <div class="img-stuff img-2">
-            <a href="https://semester-project-msc.netlify.app/" target="_blank"><img src="/images/science-museum.jpg" alt="Screenshot from my website called community science museum" /></a>
+          <div class="card-2">
+            <div class="site-2">
+              <h2>Community Science Museum</h2>
+            </div>
+            <div class="img-stuff img-2">
+              <a
+                href="https://semester-project-msc.netlify.app/"
+                target="_blank"
+                ><img
+                  src="/images/science-museum.jpg"
+                  alt="Screenshot from my website called community science museum"
+              /></a>
+            </div>
+            <div class="desc-2">
+              <p>
+                This website is from a Semester Project at Noroff. We were given
+                a task to create a website for the Community Science Museum
+                using the skills and tools we had learned our first semester at
+                school. This is made with just HTML&CSS
+              </p>
+              <p>
+                You can click
+                <a
+                  href="https://github.com/MariusChristensen/semester-project-1"
+                  >here</a
+                >
+                to check out my github from the project or
+                <a href="https://semester-project-msc.netlify.app/">here</a> to
+                go to the live site.
+              </p>
+            </div>
           </div>
-          <div class="desc-2">
-            <p>
-              This website is from a Semester Project at Noroff. We were given a task to create a website for the
-              Community Science Museum using the skills and tools we had learned our first semester at school. This is
-              made with just HTML&CSS
-            </p>
-            <p>
-              You can click
-              <a href="https://github.com/MariusChristensen/semester-project-1">here</a> to check out my github from the
-              project or <a href="https://semester-project-msc.netlify.app/">here</a> to go to the live site.
-            </p>
+          <div class="card-3">
+            <div class="site-3">
+              <h2>Rainy Days</h2>
+            </div>
+            <div class="img-stuff img-3">
+              <a href="https://rainydays-msc.netlify.app/" target="_blank"
+                ><img
+                  src="/images/rainy-days.jpg"
+                  alt="Screenshot from my website called community science museum"
+              /></a>
+            </div>
+            <div class="desc-3">
+              <p>
+                This website is from our cross-course project at Noroff where we
+                were to create an e-commerce site for a company selling jackets.
+                Throughout the year, we have updated this site based on the
+                things we have learnt along the way. Starting with just basic
+                HTML&CSS before moving over to using more complicated things
+                like Javascript and utilizing API calls to improve on the
+                website.
+              </p>
+              <p>
+                You can click
+                <a
+                  href="https://github.com/Noroff-FEU-Assignments/cross-course-project-MariusChristensen"
+                  >here</a
+                >
+                to check out my github from the project or
+                <a href="https://rainydays-msc.netlify.app/">here</a> to go to
+                the live site.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="card-3">
-          <div class="site-3">
-            <h2>Rainy Days</h2>
-          </div>
-          <div class="img-stuff img-3">
-            <a href="https://rainydays-msc.netlify.app/" target="_blank"><img src="/images/rainy-days.jpg" alt="Screenshot from my website called community science museum" /></a>
-          </div>
-          <div class="desc-3">
-            <p>
-              This website is from our cross-course project at Noroff where we were to create an e-commerce site for a
-              company selling jackets. Throughout the year, we have updated this site based on the things we have learnt
-              along the way. Starting with just basic HTML&CSS before moving over to using more complicated things like
-              Javascript and utilizing API calls to improve on the website.
-            </p>
-            <p>
-              You can click
-              <a href="https://github.com/Noroff-FEU-Assignments/cross-course-project-MariusChristensen">here</a> to
-              check out my github from the project or <a href="https://rainydays-msc.netlify.app/">here</a> to go to the
-              live site.
-            </p>
+      </section>
+
+      <section id="contact">
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="contact-container">
+          <p>I'm always interested in new opportunities and collaborations!</p>
+          <div class="social-links">
+            <a href="https://github.com/MariusChristensen" target="_blank"
+              >GitHub</a
+            >
+            <a href="mailto:your.email@example.com">Email</a>
           </div>
         </div>
-      </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <p>&copy; 2024 Marius Christensen. All rights reserved.</p>
+    </footer>
     <script src="/js/script.js"></script>
   </body>
 </html>
