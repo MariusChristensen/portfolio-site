@@ -344,15 +344,33 @@ section {
 
 /* Card Images */
 .img-stuff {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   border-radius: 12px;
   overflow: hidden;
+  aspect-ratio: 16/9;
+  max-height: 250px;
+  border: 1px solid var(--shadow);
+  box-shadow: 0 2px 12px var(--shadow);
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+    rgba(51, 65, 85, 0.02),
+    rgba(51, 65, 85, 0.05)
+  );
+}
+
+.img-stuff::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 0 1px rgba(51, 65, 85, 0.1);
+  border-radius: 12px;
+  pointer-events: none;
 }
 
 .img-stuff img {
   width: 100%;
-  max-width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
@@ -402,17 +420,13 @@ section {
   border-bottom: 2px solid var(--primary);
 }
 
-.desc-1,
-.desc-2,
-.desc-3 {
+[class^="desc-"] {
   display: flex;
   flex-direction: column;
   flex: 1; /* Takes up remaining space */
 }
 
-.desc-1 p,
-.desc-2 p,
-.desc-3 p {
+[class^="desc-"] p {
   font-size: 1.1rem;
   line-height: 1.6;
   margin: 0 0 1rem;
