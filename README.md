@@ -1,17 +1,17 @@
 # Portfolio Website
 
-A modern, responsive portfolio website showcasing my journey and projects as an aspiring front-end developer.
+A modern, responsive portfolio website showcasing my projects and skills as a front-end developer.
 
 ## Description
 
-This portfolio site features my current projects at KodeHode and previous work from Noroff, demonstrating my growth and skills in web development. The site includes:
+This portfolio site features a selection of my projects, from React applications to vanilla JavaScript implementations, demonstrating my growth and skills in web development. The site includes:
 
 - Clean, modern design with consistent styling
 - Responsive layout for all devices
-- Interactive project cards with live demos
+- Featured project cards with live demos
 - Skills overview with visual tags
-- Smooth scrolling and animations
-- Maintenance notes for legacy projects
+- Smooth scrolling and accessibility features
+- Organized project categorization
 
 ## Built With
 
@@ -24,8 +24,8 @@ This portfolio site features my current projects at KodeHode and previous work f
   - Custom Gradients
 - JavaScript
   - Smooth Scrolling
-  - Interactive Elements
   - DOM Manipulation
+  - Keyboard Accessibility
 
 ## Features
 
@@ -36,6 +36,18 @@ This portfolio site features my current projects at KodeHode and previous work f
 - Easy navigation with scroll-to-top
 - Consistent visual language throughout
 - Clear project descriptions and tech tags
+- Accessible markup with ARIA attributes
+- Performance optimizations
+
+## Projects Showcase
+
+The portfolio highlights various projects including:
+
+- React applications
+- Interactive games
+- API integrations
+- Mobile development with React Native
+- Responsive business websites
 
 ## Contact
 
@@ -46,5 +58,4 @@ Feel free to reach out:
 
 ## Acknowledgments
 
-- KodeHode for current learning journey
-- Noroff for initial web development experience
+- KodeHode for the learning journey
