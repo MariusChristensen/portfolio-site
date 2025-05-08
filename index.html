@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio of Marius Christensen - Front-End Developer"
+      content="Portfolio of Marius Christensen - Front-End Developer. Showcasing projects in React, JavaScript, and web development."
     />
     <title>Marius Christensen | Portfolio</title>
     <link
@@ -25,7 +25,7 @@
     <meta property="og:title" content="Marius Christensen | Portfolio" />
     <meta
       property="og:description"
-      content="Portfolio of Marius Christensen - Front-End Developer"
+      content="Portfolio of Marius Christensen - Front-End Developer. Showcasing projects in React, JavaScript, and web development."
     />
     <meta property="og:image" content="images/profile.jpg" />
     <meta
@@ -35,9 +35,9 @@
   </head>
   <body id="top">
     <header>
-      <nav>
+      <nav aria-label="Main navigation">
         <div class="nav-container">
-          <div class="nav-logo">MC</div>
+          <div class="nav-logo" aria-hidden="true">MC</div>
           <ul class="nav-links">
             <li><a href="#top">About</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -47,14 +47,16 @@
       </nav>
     </header>
     <main>
-      <section id="about">
-        <h1>Welcome to my portfolio</h1>
+      <section id="about" aria-labelledby="about-heading">
+        <h1 id="about-heading">Welcome to my portfolio</h1>
 
         <div class="profile-container">
           <div class="selfie">
             <img
               src="images/profile.jpg"
               alt="Marius Christensen - Front-End Developer"
+              width="250"
+              height="250"
             />
           </div>
 
@@ -80,8 +82,12 @@
             sparked my passion for web development.
           </p>
           <p>
-            Below you can find both my recent projects at KodeHode and my
-            earlier work from Noroff.
+            I'm passionate about creating clean, responsive, and user-friendly
+            web experiences using modern technologies and best practices.
+          </p>
+          <p>
+            Below you can find a selection of my projects, showcasing my skills
+            and approach to web development.
           </p>
         </div>
 
@@ -91,27 +97,33 @@
             <span class="skill-tag">HTML5</span>
             <span class="skill-tag">CSS3</span>
             <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">API Integration</span>
             <span class="skill-tag">Responsive Design</span>
             <span class="skill-tag">Git</span>
           </div>
         </div>
       </section>
 
-      <section id="projects">
-        <h2 class="section-title">Current Projects at KodeHode</h2>
+      <section id="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading" class="section-title">Featured Projects</h2>
         <div class="container">
-          <article class="card-1">
+          <article class="project-card card-1">
             <div class="site-1">
-              <h2>SnakeySnake</h2>
+              <h3>SnakeySnake</h3>
             </div>
             <div class="img-stuff img-1">
               <a
                 href="https://mariuschristensen.github.io/cursor-guided-game/"
                 target="_blank"
+                rel="noopener"
               >
                 <img
                   src="images/snake-game.jpg"
                   alt="Screenshot of SnakeySnake game"
+                  width="400"
+                  height="225"
                 />
               </a>
             </div>
@@ -126,11 +138,15 @@
                 View project on
                 <a
                   href="https://github.com/MariusChristensen/cursor-guided-game"
+                  target="_blank"
+                  rel="noopener"
                   >GitHub</a
                 >
                 or
                 <a
                   href="https://mariuschristensen.github.io/cursor-guided-game/"
+                  target="_blank"
+                  rel="noopener"
                   >play the game</a
                 >.
               </p>
@@ -142,223 +158,245 @@
             </div>
           </article>
 
-          <article class="card-2">
+          <article class="project-card card-2">
             <div class="site-2">
-              <h2>Quiz Time</h2>
+              <h3>Skien Frisbeeklubb</h3>
             </div>
             <div class="img-stuff img-2">
+              <a
+                href="https://skien-ukesgolf.netlify.app/"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="images/skien-frisbee.jpg"
+                  alt="Screenshot of Skien Frisbeeklubb application"
+                  width="400"
+                  height="225"
+                />
+              </a>
+            </div>
+            <div class="desc-2">
+              <p>
+                A modern leaderboard and statistics web app for Skien
+                Frisbeeklubb's weekly disc golf competitions. Features
+                multi-page views for results and statistics, dynamic points
+                calculation, and detailed hole averages with color-coded scoring
+                visualization.
+              </p>
+              <p>
+                View project on
+                <a
+                  href="https://github.com/MariusChristensen/skien-sammenlagt"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+                or
+                <a
+                  href="https://skien-ukesgolf.netlify.app/"
+                  target="_blank"
+                  rel="noopener"
+                  >visit the live site</a
+                >.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Tailwind CSS</span>
+                <span class="tech-tag">REST API</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card card-3">
+            <div class="site-3">
+              <h3>What's for Dinner?</h3>
+            </div>
+            <div class="img-stuff img-3">
+              <a
+                href="https://mariuschristensen.github.io/fun-with-API/"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="images/dinner-generator.jpg"
+                  alt="Screenshot of What's for Dinner recipe generator"
+                  width="400"
+                  height="225"
+                />
+              </a>
+            </div>
+            <div class="desc-3">
+              <p>
+                A modern recipe generator that helps answer the eternal question
+                of what to cook. Features random recipe generation from
+                TheMealDB API, ingredient lists, cooking instructions, and a
+                sticky sidebar for easy reference while cooking.
+              </p>
+              <p>
+                View project on
+                <a
+                  href="https://github.com/MariusChristensen/fun-with-API"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+                or
+                <a
+                  href="https://mariuschristensen.github.io/fun-with-API/"
+                  target="_blank"
+                  rel="noopener"
+                  >try it out</a
+                >.
+              </p>
+              <div class="tech-tags">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">API Integration</span>
+                <span class="tech-tag">Responsive Design</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <h2 class="section-title">Other Projects</h2>
+        <div class="smaller-projects">
+          <div class="project-link">
+            <a
+              href="https://mariuschristensen.github.io/quiz-time/"
+              target="_blank"
+              rel="noopener"
+              >Quiz Time</a
+            >
+            <span class="project-desc">
+              An ocean-themed quiz application that pulls questions from the
+              Open Trivia Database. Features a "Who Wants to Be a Millionaire"
+              style interface and 24+ quiz categories.
+            </span>
+            <div class="small-tech-tags">
+              <span class="small-tech-tag">JavaScript</span>
+              <span class="small-tech-tag">API Integration</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/MariusChristensen/quiz-time"
+                class="view-github"
+                target="_blank"
+                rel="noopener"
+                >View on GitHub</a
+              >
               <a
                 href="https://mariuschristensen.github.io/quiz-time/"
+                class="visit-site"
                 target="_blank"
+                rel="noopener"
+                >Visit Live Site</a
               >
-                <img
-                  src="images/quiz-app.jpg"
-                  alt="Screenshot of Quiz Time application"
-                />
-              </a>
             </div>
-            <div class="desc-2">
-              <p>
-                An ocean-themed quiz application that pulls questions from the
-                Open Trivia Database. Features a "Who Wants to Be a Millionaire"
-                style interface, 24+ quiz categories, and drag-and-drop category
-                reordering with persistent storage.
-              </p>
-              <p>
-                View project on
-                <a href="https://github.com/MariusChristensen/quiz-time"
-                  >GitHub</a
-                >
-                or
-                <a href="https://mariuschristensen.github.io/quiz-time/"
-                  >play the quiz</a
-                >.
-              </p>
-              <div class="tech-tags">
-                <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">HTML</span>
-                <span class="tech-tag">CSS</span>
-              </div>
-            </div>
-          </article>
+          </div>
 
-          <article class="card-3">
-            <div class="site-3">
-              <h2>Craftsvilla</h2>
+          <div class="project-link">
+            <a
+              href="https://mariuschristensen.github.io/craftsvilla/"
+              target="_blank"
+              rel="noopener"
+              >Craftsvilla</a
+            >
+            <span class="project-desc">
+              A creative business website for CRAFTSVILLA, showcasing various
+              art workshops and activities with multiple pages including a
+              gallery and booking system.
+            </span>
+            <div class="small-tech-tags">
+              <span class="small-tech-tag">JavaScript</span>
+              <span class="small-tech-tag">Responsive Design</span>
             </div>
-            <div class="img-stuff img-3">
+            <div class="project-links">
+              <a
+                href="https://github.com/MariusChristensen/craftsvilla"
+                class="view-github"
+                target="_blank"
+                rel="noopener"
+                >View on GitHub</a
+              >
               <a
                 href="https://mariuschristensen.github.io/craftsvilla/"
+                class="visit-site"
                 target="_blank"
+                rel="noopener"
+                >Visit Live Site</a
               >
-                <img
-                  src="images/craftsvilla.jpg"
-                  alt="Screenshot of Craftsvilla website"
-                />
-              </a>
             </div>
-            <div class="desc-3">
-              <p>
-                A creative business website for CRAFTSVILLA, showcasing various
-                art workshops and activities. The site features multiple pages
-                including a gallery, booking system, and customer reviews. Built
-                with HTML, CSS, and JavaScript focusing on responsive design and
-                user experience.
-              </p>
-              <p>
-                View project on
-                <a href="https://github.com/MariusChristensen/craftsvilla"
-                  >GitHub</a
-                >
-                or
-                <a href="https://mariuschristensen.github.io/craftsvilla/"
-                  >visit the site</a
-                >.
-              </p>
-              <div class="tech-tags">
-                <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">HTML</span>
-                <span class="tech-tag">CSS</span>
-              </div>
-            </div>
-          </article>
-        </div>
+          </div>
 
-        <h2 class="section-title">Previous Projects from Noroff</h2>
-        <div class="container">
-          <article class="card-1">
-            <div class="site-1">
-              <h2>The Missing Link</h2>
+          <div class="project-link">
+            <a
+              href="https://github.com/MariusChristensen/Camillery"
+              target="_blank"
+              rel="noopener"
+              >Camillery</a
+            >
+            <span class="project-desc">
+              A mobile gallery application built with React Native and Expo.
+              Features user authentication, photo sharing, and a nature-inspired
+              UI. Currently in development as I explore mobile app development.
+            </span>
+            <div class="small-tech-tags">
+              <span class="small-tech-tag">React Native</span>
+              <span class="small-tech-tag">Expo</span>
+              <span class="small-tech-tag">Firebase</span>
             </div>
-            <div class="img-stuff img-1">
+            <div class="project-links">
               <a
-                href="https://mariusc-project-exam1.netlify.app/"
+                href="https://github.com/MariusChristensen/Camillery"
+                class="view-github"
                 target="_blank"
-                ><img
-                  src="images/missing-link.jpg"
-                  alt="Screenshot of my website called The Missing Link"
-              /></a>
+                rel="noopener"
+                >View on GitHub</a
+              >
             </div>
-            <div class="desc-1">
-              <p>
-                This website is from a Project Exam at Noroff. We were meant to
-                make a blog-site about any topic we wanted. We needed to make
-                the site from the ground up with basic HTML, CSS and JS, but
-                fetching all the blog-posts and media from the Wordpress REST
-                API.
-              </p>
-              <p>
-                View project on
-                <a
-                  href="https://github.com/Noroff-FEU-Assignments/project-exam-1-MariusChristensen"
-                  >GitHub</a
-                >
-                or
-                <a href="https://mariusc-project-exam1.netlify.app/"
-                  >visit the site</a
-                >.
-              </p>
-              <div class="tech-tags">
-                <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">HTML</span>
-                <span class="tech-tag">CSS</span>
-              </div>
-            </div>
-          </article>
-          <article class="card-2">
-            <div class="site-2">
-              <h2>Community Science Museum</h2>
-            </div>
-            <div class="img-stuff img-2">
-              <a
-                href="https://semester-project-msc.netlify.app/"
-                target="_blank"
-                ><img
-                  src="images/science-museum.jpg"
-                  alt="Screenshot from my website called community science museum"
-              /></a>
-            </div>
-            <div class="desc-2">
-              <p>
-                This website is from a Semester Project at Noroff. We were given
-                a task to create a website for the Community Science Museum
-                using the skills and tools we had learned our first semester at
-                school. This is made with just HTML&CSS
-              </p>
-              <p>
-                View project on
-                <a
-                  href="https://github.com/MariusChristensen/semester-project-1"
-                  >GitHub</a
-                >
-                or
-                <a href="https://semester-project-msc.netlify.app/"
-                  >visit the site</a
-                >.
-              </p>
-              <div class="tech-tags">
-                <span class="tech-tag">HTML</span>
-                <span class="tech-tag">CSS</span>
-              </div>
-            </div>
-          </article>
-          <article class="card-3">
-            <div class="site-3">
-              <h2>Rainy Days</h2>
-            </div>
-            <div class="img-stuff img-3">
-              <a href="https://rainydays-msc.netlify.app/" target="_blank"
-                ><img
-                  src="images/rainy-days.jpg"
-                  alt="Screenshot from my website called Rainy Days"
-              /></a>
-            </div>
-            <div class="desc-3">
-              <p>
-                This website is from our cross-course project at Noroff where we
-                were to create an e-commerce site for a company selling jackets.
-                Throughout the year, we have updated this site based on the
-                things we have learnt along the way. Starting with just basic
-                HTML&CSS before moving over to using more complicated things
-                like Javascript and utilizing API calls to improve on the
-                website.
-              </p>
-              <p>
-                View project on
-                <a
-                  href="https://github.com/Noroff-FEU-Assignments/cross-course-project-MariusChristensen"
-                  >GitHub</a
-                >
-                or
-                <a href="https://rainydays-msc.netlify.app/">visit the site</a>.
-              </p>
-              <div class="tech-tags">
-                <span class="tech-tag">JavaScript</span>
-                <span class="tech-tag">HTML</span>
-                <span class="tech-tag">CSS</span>
-                <span class="tech-tag">API Calls</span>
-              </div>
-            </div>
-          </article>
-        </div>
+          </div>
 
-        <!-- Add this note after the Noroff projects container -->
-        <div class="maintenance-note">
-          <p>
-            Note: Some older projects may have maintenance issues (e.g., expired
-            API endpoints or image links) as they were created during my studies
-            at Noroff. The code structure and implementation details can still
-            be viewed on GitHub.
-          </p>
+          <div class="project-link">
+            <a
+              href="https://github.com/MariusChristensen/checkin-bot"
+              target="_blank"
+              rel="noopener"
+              >Discord Check-in Bot</a
+            >
+            <span class="project-desc">
+              A utility Discord bot that manages user check-ins via button
+              interactions. Features include automatic list management and admin
+              reporting functionality for event coordination.
+            </span>
+            <div class="small-tech-tags">
+              <span class="small-tech-tag">Discord.js</span>
+              <span class="small-tech-tag">Discord API</span>
+              <span class="small-tech-tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/MariusChristensen/checkin-bot"
+                class="view-github"
+                target="_blank"
+                rel="noopener"
+                >View on GitHub</a
+              >
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="contact">
-        <h2 class="section-title">Let's Connect</h2>
+      <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading" class="section-title">Let's Connect</h2>
         <div class="contact-container">
           <p>I'm always interested in new opportunities and collaborations!</p>
           <div class="social-links">
-            <a href="https://github.com/MariusChristensen" target="_blank"
+            <a
+              href="https://github.com/MariusChristensen"
+              target="_blank"
+              rel="noopener"
               >GitHub</a
             >
             <a href="mailto:mariusschristensen@gmail.com">Email</a>
