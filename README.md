@@ -9,6 +9,8 @@ This portfolio site features a selection of my projects, from React applications
 - Clean, modern design with consistent styling
 - Responsive layout for all devices
 - Featured project cards with live demos
+- In-depth case studies with problem-solving process
+- Interactive image galleries for visual comparisons
 - Skills overview with visual tags
 - Smooth scrolling and accessibility features
 - Organized project categorization
@@ -25,6 +27,7 @@ This portfolio site features a selection of my projects, from React applications
 - JavaScript
   - Smooth Scrolling
   - DOM Manipulation
+  - Interactive Modal Gallery
   - Keyboard Accessibility
 
 ## Features
@@ -33,6 +36,9 @@ This portfolio site features a selection of my projects, from React applications
 - Modern color scheme with CSS variables
 - Animated elements and transitions
 - Project cards with live previews
+- Case studies with detailed project breakdowns
+- Interactive before/after image galleries
+- Modal navigation with keyboard controls
 - Easy navigation with scroll-to-top
 - Consistent visual language throughout
 - Clear project descriptions and tech tags
@@ -43,11 +49,12 @@ This portfolio site features a selection of my projects, from React applications
 
 The portfolio highlights various projects including:
 
-- React applications
-- Interactive games
-- API integrations
+- Personal CV website with bilingual support
+- React applications with modern UI
+- Interactive games with leaderboards
+- API integrations and data visualization
 - Mobile development with React Native
-- Responsive business websites
+- UX improvement case studies
 
 ## Contact
 
