@@ -1,11 +1,13 @@
 /**
  * Portfolio Site Interactivity
- * Handles scroll-to-top functionality and image gallery modal
+ * Handles scroll-to-top functionality, mobile navigation, and image gallery modal
  */
 
 // DOM elements
 const scrollButton = document.getElementById("scroll-top");
 const footer = document.querySelector("footer");
+const navToggle = document.querySelector(".nav-toggle");
+const navLinks = document.querySelector(".nav-links");
 
 /**
  * Show button when scrolling down and adjust position when near footer
@@ -18,6 +20,29 @@ window.addEventListener("scroll", () => {
  * Scroll to top when button is clicked
  */
 scrollButton.addEventListener("click", scrollToTop);
+
+/**
+ * Mobile Navigation Toggle
+ */
+navToggle.addEventListener("click", toggleMobileNav);
+
+/**
+ * Close mobile nav when clicking on nav links
+ */
+navLinks.addEventListener("click", (e) => {
+  if (e.target.tagName === "A") {
+    closeMobileNav();
+  }
+});
+
+/**
+ * Close mobile nav when clicking outside of nav
+ */
+document.addEventListener("click", (e) => {
+  if (!e.target.closest("nav") && navLinks.classList.contains("active")) {
+    closeMobileNav();
+  }
+});
 
 /**
  * Handles the visibility of the scroll button based on scroll position
@@ -51,6 +76,37 @@ function scrollToTop() {
     top: 0,
     behavior: "smooth",
   });
+}
+
+/**
+ * Toggles the mobile navigation menu
+ */
+function toggleMobileNav() {
+  const isActive = navLinks.classList.contains("active");
+
+  if (isActive) {
+    closeMobileNav();
+  } else {
+    openMobileNav();
+  }
+}
+
+/**
+ * Opens the mobile navigation menu
+ */
+function openMobileNav() {
+  navLinks.classList.add("active");
+  navToggle.setAttribute("aria-expanded", "true");
+  navToggle.innerHTML = "✕"; // Change to X icon
+}
+
+/**
+ * Closes the mobile navigation menu
+ */
+function closeMobileNav() {
+  navLinks.classList.remove("active");
+  navToggle.setAttribute("aria-expanded", "false");
+  navToggle.innerHTML = "☰"; // Change back to hamburger icon
 }
 
 /**
